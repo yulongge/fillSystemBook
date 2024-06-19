@@ -56,6 +56,9 @@ export default {
 </script>
 
 <style>
+body {
+  overflow-y: hidden;
+}
 #app {
   color: #2c3e50;
   display: flex;
@@ -63,7 +66,16 @@ export default {
   height: 100vh;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+#app::-webkit-scrollbar {
+  width: 0;
+}
+ 
+/* 隐藏水平滚动条 */
+#app::-webkit-scrollbar {
+  height: 0;
 }
 .app-header {
   height: 60px;
@@ -71,8 +83,9 @@ export default {
   border-color: rgba(229,231,235,1);
   display: flex;
   align-items: center;
-  padding: 0px 200px;;
+  padding: 0px 100px;;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 .app-logo {
   width: 32px;
@@ -86,7 +99,8 @@ export default {
 .app-container {
   flex: 1;
   display: flex;
-  padding: 0px 100px;
+  padding: 0px 60px;
+  box-sizing: border-box;
 }
 .app-menu {
   width: 200px;
@@ -110,6 +124,7 @@ export default {
 }
 .content-intro {
   flex: 1;
+  min-width: 200px;
 }
 .content-intro .intro-title span {
   display: inline-block;
