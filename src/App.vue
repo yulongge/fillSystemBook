@@ -99,4 +99,34 @@ export default {
   overflow-y: scroll;
   height: 90vh;
 }
+
+.content-main {
+  margin-top: 20px;
+  border: 1px solid #efefef;
+  min-height: 200px;
+  display: flex;
+  padding: 10px;
+}
+.content-intro {
+  flex: 1;
+}
+.content-intro-right {
+  margin-left: 20px;
+}
+.content-imgs {
+  /* background-color: #1682F9; */
+}
+.content-imgs-preview {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.content-img {
+  width: 250px;
+  border-radius: 10px;
+}
+.content-img-preview {
+  width: 200px;
+  border-radius: 10px;
+}
 </style>

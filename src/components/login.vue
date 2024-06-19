@@ -1,6 +1,13 @@
 <template>
   <div class="content-container">
-    登录
+    <p class="content-title">登录</p>
+    <p class="content-title">登录页面包含一下功能</p>
+    <div class="content-main">
+      <div class="content-imgs-preview">
+        <img src="../assets/login/index.png" class="content-img-preview"/>
+        <img src="../assets/login/regist.png" class="content-img-preview"/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -14,7 +21,7 @@ export default {
 </script>
 
 <style scoped>
-.content-container {
-  
+.content-container .content-imgs-preview{
+  justify-content: space-around;
 }
 </style>
