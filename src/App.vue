@@ -106,12 +106,21 @@ export default {
   min-height: 200px;
   display: flex;
   padding: 10px;
+  border-radius: 5px;
 }
 .content-intro {
   flex: 1;
 }
+.content-intro .intro-title span {
+  display: inline-block;
+  padding: 10px 0px;
+  border-bottom: 3px solid #1682F9;
+}
 .content-intro-right {
-  margin-left: 20px;
+  margin-left: 60px;
+}
+.content-intro-left {
+  padding-left: 100px;
 }
 .content-imgs {
   /* background-color: #1682F9; */
@@ -124,9 +133,41 @@ export default {
 .content-img {
   width: 250px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 .content-img-preview {
   width: 200px;
   border-radius: 10px;
+}
+.intro-desc {
+  font-size: 14px;
+  color: rgb(121, 127, 138);;
+}
+.intro-title {
+
+}
+.intro-item {
+  display: flex;
+  align-items: center;
+}
+.intro-item .number {
+  font-size: 30px;
+  color: #1682F9;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.content-container .content-imgs-preview{
+  justify-content: flex-start;
+}
+.content-img-preview {
+  margin-right: 20px;
+}
+.content-intro-right {
+  margin-left: 100px;
+}
+.content-main {
+  padding-left: 100px;
+  padding-right: 100px;
+  /* border: unset; */
 }
 </style>
