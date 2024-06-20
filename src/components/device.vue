@@ -11,10 +11,12 @@
         <p class="intro-title">
           <span>加注设备列表</span>
         </p>
-        <p class="intro-item intro-desc">显示所有的加注设备及信息</p>
+        <p class="intro-item intro-desc">显示所有的加注设备及信息:</p>
+        <p class="intro-item intro-desc">网络是否在线，开关状态、流量、计划完成度,网络离线、设备故障、液位过低、温度过低等报警信息等</p>
         <p class="intro-item intro-desc">进行设备添加</p>
         <p class="intro-item intro-desc">进行加注计划添加</p>
         <p class="intro-item intro-desc">进行设备搜索</p>
+        <p class="intro-item intro-desc">统计报表</p>
       </div>
     </div>
     <div class="content-main">
@@ -45,6 +47,29 @@
         </p>
         <p class="intro-item intro-desc">显示所有加注计划</p>
         <p class="intro-item intro-desc">根据页面提示，添加加注计划</p>
+      </div>
+    </div>
+    <div class="content-main">
+      <div class="content-intro content-intro-left">
+        <p class="intro-title">
+          <span>操控设备</span>
+        </p>
+        <p class="intro-item intro-desc">根据页面提示，进行设备控制相关设置</p>
+      </div>
+      <div class="content-imgs">
+        <img src="../assets/device/operateDevice.png" class="content-img"/>
+      </div>
+    </div>
+    <div class="content-main">
+      <div class="content-imgs">
+        <img src="../assets/device/statistic1.png" class="content-img"/>
+        <img src="../assets/device/statistic2.png" class="content-img"/>
+      </div>
+      <div class="content-intro content-intro-right">
+        <p class="intro-title">
+          <span>按条件进行</span>
+        </p>
+        <p class="intro-item intro-desc">根据条件，统计一段时间内的历史加注数据</p>
       </div>
     </div>
   </div>

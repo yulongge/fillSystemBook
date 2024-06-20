@@ -12,9 +12,10 @@
       <div class="app-submenus">
         <span class="app-submenu-item" :class="{'active': currentIndex == 6 }" @click="switchMenu(6)">登录/注册</span>
         <span class="app-submenu-item" :class="{'active': currentIndex == 2 }" @click="switchMenu(2)">首页</span>
-        <span class="app-submenu-item" :class="{'active': currentIndex == 3 }" @click="switchMenu(3)">我的</span>
-        <span class="app-submenu-item" :class="{'active': currentIndex == 4 }" @click="switchMenu(4)">监听设备</span>
         <span class="app-submenu-item" :class="{'active': currentIndex == 5 }" @click="switchMenu(5)">加注设备</span>
+        <span class="app-submenu-item" :class="{'active': currentIndex == 4 }" @click="switchMenu(4)">监听设备</span>
+        <span class="app-submenu-item" :class="{'active': currentIndex == 3 }" @click="switchMenu(3)">我的</span>
+        
       </div>
     </div>
   </div>

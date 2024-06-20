@@ -20,7 +20,7 @@
           <span class="number">03</span>
           图标分析
         </p>
-        <p class="intro-item intro-desc">显示监测设备近一周的数据分析</p>
+        <p class="intro-item intro-desc">显示加注设备近一周的数据分析</p>
       </div>
       <div class="content-imgs">
         <img src="../assets/home/home.png" class="content-img"/>
