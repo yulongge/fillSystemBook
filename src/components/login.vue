@@ -33,7 +33,7 @@
           功能说明：
         </p>
         <p class="intro-item">
-          根据页面提示，进行注册
+          根据页面提示，进行注册，主要信息有姓名，电话，密码，部门等信息
         </p>
         <p class="intro-item intro-desc">
           注册后，会自动登录~

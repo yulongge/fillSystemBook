@@ -40,6 +40,7 @@
       <div class="content-imgs">
         <img src="../assets/device/plan.png" class="content-img"/>
         <img src="../assets/device/addPlan.png" class="content-img"/>
+        <img src="../assets/device/compare.png" class="content-img"/>
       </div>
       <div class="content-intro content-intro-right">
         <p class="intro-title">
@@ -47,6 +48,7 @@
         </p>
         <p class="intro-item intro-desc">显示所有加注计划</p>
         <p class="intro-item intro-desc">根据页面提示，添加加注计划</p>
+        <p class="intro-item intro-desc">选择不同的加注计划，进行对比，分析加注计划对腐蚀速率的影响</p>
       </div>
     </div>
     <div class="content-main">
@@ -66,10 +68,12 @@
         <img src="../assets/device/statistic2.png" class="content-img"/>
       </div>
       <div class="content-intro content-intro-right">
+        <img src="../assets/device/table1.png" class="content-img content-img-heriz"/>
         <p class="intro-title">
-          <span>按条件进行</span>
+          <span>按条件进行统计报表展示</span>
         </p>
         <p class="intro-item intro-desc">根据条件，统计一段时间内的历史加注数据</p>
+        <p class="intro-item intro-desc">支持横屏展示</p>
       </div>
     </div>
   </div>
@@ -87,5 +91,11 @@ export default {
 <style scoped>
 .content-container {
   
+}
+.content-img-heriz {
+  width: 500px;
+}
+.content-intro-right {
+  margin-left: 20px;
 }
 </style>

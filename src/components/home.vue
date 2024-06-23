@@ -20,10 +20,11 @@
           <span class="number">03</span>
           图标分析
         </p>
+        <p class="intro-item intro-desc">弹幕滚动展示报警信息</p>
         <p class="intro-item intro-desc">显示加注设备近一周的数据分析</p>
       </div>
       <div class="content-imgs">
-        <img src="../assets/home/home.png" class="content-img"/>
+        <img src="../assets/home/home2.png" class="content-img"/>
       </div>
     </div>
   </div>
