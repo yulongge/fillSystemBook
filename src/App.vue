@@ -1,61 +1,34 @@
 <template>
   <div id="app">
     <div class="app-header">
-      <img src="./assets/logo.jpg" class="app-logo"/>
-      <span class="app-title">智能加注系统</span>
-    </div>
-    <div class="app-container">
-      <div class="app-menu">
-        <Menu @switchMenu="switchMenu"/>
-      </div>
-      <div class="app-content">
-        <Background v-if="currentIndex == 0"/>
-        <Intro v-if="currentIndex == 1"/>
-        <Home v-if="currentIndex == 2"/>
-        <My v-if="currentIndex == 3"/>
-        <Monitor v-if="currentIndex == 4"/>
-        <Device v-if="currentIndex == 5"/>
-        <Login v-if="currentIndex == 6"/>
+      <img src="./assets/logo.jpg" class="app-logo" @click="toHome"/>
+      <span class="app-title" @click="toHome">智能加注系统</span>
+      <div class="header-menu">
+        <router-link to="/help">产品文档</router-link>
       </div>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Menu from './components/menu.vue'
-import Background from './components/background.vue'
-import Intro from './components/intro.vue'
-import Home from './components/home.vue'
-import My from './components/my.vue'
-import Monitor from './components/monitor.vue'
-import Device from './components/device.vue'
-import Login from './components/login.vue'
 export default {
   name: 'App',
-  components: {
-    Menu,
-    Background,
-    Intro,
-    Home,
-    My,
-    Monitor,
-    Device,
-    Login,
-  },
+  components: {},
   data() {
     return {
       currentIndex: 0,
     }
   },
   methods: {
-    switchMenu(index) {
-      this.currentIndex = index
+    toHome() {
+      this.$router.push('/')
     }
   }
 }
 </script>
 
-<style>
+<style lang="less">
 body {
   overflow-y: hidden;
 }
@@ -86,6 +59,10 @@ body {
   padding: 0px 100px;;
   flex-shrink: 0;
   box-sizing: border-box;
+  .header-menu {
+    flex: 1;
+    text-align: right;
+  }
 }
 .app-logo {
   width: 32px;
@@ -121,68 +98,5 @@ body {
   display: flex;
   padding: 10px;
   border-radius: 5px;
-}
-.content-intro {
-  flex: 1;
-  min-width: 200px;
-}
-.content-intro .intro-title span {
-  display: inline-block;
-  padding: 10px 0px;
-  border-bottom: 3px solid #1682F9;
-}
-.content-intro-right {
-  margin-left: 60px;
-}
-.content-intro-left {
-  padding-left: 100px;
-}
-.content-imgs {
-  /* background-color: #1682F9; */
-}
-.content-imgs-preview {
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
-}
-.content-img {
-  width: 250px;
-  border-radius: 10px;
-  margin-right: 10px;
-}
-.content-img-preview {
-  width: 200px;
-  border-radius: 10px;
-}
-.intro-desc {
-  font-size: 14px;
-  color: rgb(121, 127, 138);;
-}
-.intro-title {
-
-}
-.intro-item {
-  display: flex;
-  align-items: center;
-}
-.intro-item .number {
-  font-size: 30px;
-  color: #1682F9;
-  font-weight: bold;
-  margin-right: 10px;
-}
-.content-container .content-imgs-preview{
-  justify-content: flex-start;
-}
-.content-img-preview {
-  margin-right: 20px;
-}
-.content-intro-right {
-  margin-left: 100px;
-}
-.content-main {
-  padding-left: 100px;
-  padding-right: 100px;
-  /* border: unset; */
 }
 </style>
